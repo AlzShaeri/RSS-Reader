@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Allow scrolling by aligning items at the top */
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto; /* Ensure body can scroll */
+}
+
+#app {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Set a max width to make sure it doesn't get too wide */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin: 20px; /* Add some margin to the top to space it from the edge */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#fetch-feed {
+    margin-bottom: 10px; /* Add margin to the bottom of the Fetch Feed button */
+}
+
+#saved-feeds li {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between the link and the delete button */
+    align-items: center; /* Align the button and text vertically */
+}
+
+#saved-feeds a {
+    flex-grow: 1; /* Allow the link to take up available space */
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+}
+
+#saved-feeds a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#saved-feeds button {
+    margin-left: 10px; /* Space between the feed link and delete button */
+    padding: 5px 10px; /* Smaller padding for delete button */
+    background-color: #dc3545; /* Red background for delete button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#saved-feeds button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* Ensure long words/wrap properly */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+p {
+    margin: 5px 0;
+}
