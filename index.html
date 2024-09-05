@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>RSS Reader</h1>
+        <input type="text" id="rss-url" placeholder="Enter RSS feed URL">
+        <button id="fetch-feed">Fetch Feed</button>
+        <button id="save-feed">Save Feed</button> <!-- Save feed button -->
+        
+        <h2>Saved Feeds</h2>
+        <ul id="saved-feeds">
+            <!-- Saved feeds will be dynamically loaded here -->
+        </ul>
+        
+        <h2>Feed Items</h2>
+        <ul id="rss-feed">
+            <!-- RSS feed items will be dynamically loaded here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
